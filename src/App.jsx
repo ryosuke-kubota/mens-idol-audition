@@ -4,8 +4,7 @@ import About from './components/About'
 import Entry from './components/Entry'
 import Video from './components/Video'
 import Latest from './components/Latest'
-import Program from './components/Program'
-import News from './components/News'
+import Footer from './components/Footer'
 import AnimatedBackground from './components/AnimatedBackground'
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
       <Entry />
       <Video />
       <Latest />
+      <Footer />
     </div>
   )
 }
