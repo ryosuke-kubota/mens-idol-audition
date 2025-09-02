@@ -1,0 +1,91 @@
+/* Animated Background Styles */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: black;
+  background-image: radial-gradient(circle at center, white 0%, #222 10%, black 60%);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  filter: grayscale(1);
+}
+
+/* Generate triangle animations */
+@keyframes triangle1 { 0% { opacity: 1; transform: rotate(45deg) translate3d(234px, -567px, 1000px) scale(1); } }
+@keyframes triangle2 { 0% { opacity: 1; transform: rotate(135deg) translate3d(-123px, 789px, 1000px) scale(1); } }
+@keyframes triangle3 { 0% { opacity: 1; transform: rotate(270deg) translate3d(456px, 234px, 1000px) scale(1); } }
+@keyframes triangle4 { 0% { opacity: 1; transform: rotate(90deg) translate3d(-789px, -123px, 1000px) scale(1); } }
+@keyframes triangle5 { 0% { opacity: 1; transform: rotate(180deg) translate3d(567px, -456px, 1000px) scale(1); } }
+@keyframes triangle6 { 0% { opacity: 1; transform: rotate(315deg) translate3d(-234px, 678px, 1000px) scale(1); } }
+@keyframes triangle7 { 0% { opacity: 1; transform: rotate(225deg) translate3d(890px, 345px, 1000px) scale(1); } }
+@keyframes triangle8 { 0% { opacity: 1; transform: rotate(60deg) translate3d(-456px, -789px, 1000px) scale(1); } }
+@keyframes triangle9 { 0% { opacity: 1; transform: rotate(120deg) translate3d(123px, 567px, 1000px) scale(1); } }
+@keyframes triangle10 { 0% { opacity: 1; transform: rotate(300deg) translate3d(-678px, -234px, 1000px) scale(1); } }
+
+.triangle:nth-child(1) {
+  border-top: 25px solid hsl(45, 100%, 50%);
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+  transform: rotate(45deg) translate3d(0, 0, -1500px) scale(0);
+  animation: triangle1 10s infinite linear;
+  animation-delay: -50ms;
+}
+
+.triangle:nth-child(2) {
+  border-top: 35px solid hsl(135, 100%, 50%);
+  border-right: 35px solid transparent;
+  border-left: 35px solid transparent;
+  margin-left: -17.5px;
+  margin-top: -17.5px;
+  transform: rotate(135deg) translate3d(0, 0, -1500px) scale(0);
+  animation: triangle2 10s infinite linear;
+  animation-delay: -100ms;
+}
+
+.triangle:nth-child(3) {
+  border-top: 15px solid hsl(270, 100%, 50%);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  margin-left: -7.5px;
+  margin-top: -7.5px;
+  transform: rotate(270deg) translate3d(0, 0, -1500px) scale(0);
+  animation: triangle3 10s infinite linear;
+  animation-delay: -150ms;
+}
+
+.triangle:nth-child(4) {
+  border-top: 40px solid hsl(90, 100%, 50%);
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  margin-left: -20px;
+  margin-top: -20px;
+  transform: rotate(90deg) translate3d(0, 0, -1500px) scale(0);
+  animation: triangle4 10s infinite linear;
+  animation-delay: -200ms;
+}
+
+.triangle:nth-child(5) {
+  border-top: 30px solid hsl(180, 100%, 50%);
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  margin-left: -15px;
+  margin-top: -15px;
+  transform: rotate(180deg) translate3d(0, 0, -1500px) scale(0);
+  animation: triangle5 10s infinite linear;
+  animation-delay: -250ms;
+}
