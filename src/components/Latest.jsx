@@ -124,7 +124,7 @@ const Latest = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {/* News Items */}
-          <div className="space-y-1 md:space-y-2">
+          <div className="space-y-3 md:space-y-2">
             {newsItems.map((item, index) => (
               <motion.article
                 key={index}
@@ -133,17 +133,44 @@ const Latest = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.05 * index }}
               >
-                <a href="#" className="block hover:bg-gray-50/50 rounded-lg transition-colors duration-200 px-2 md:px-4 py-2 md:py-3">
-                  <div className="flex items-center gap-2 md:gap-4">
+                <a href="#" className="block hover:bg-gray-50/50 rounded-lg transition-colors duration-200 px-3 md:px-4 py-3 md:py-3">
+                  {/* Mobile Layout */}
+                  <div className="block md:hidden">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs font-medium text-gray-500">
+                        {item.date}
+                      </span>
+                      {item.isNew && (
+                        <motion.span
+                          className="text-xs font-bold px-2 py-1 bg-red-500 text-white rounded"
+                          animate={{ scale: [1, 1.05, 1] }}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        >
+                          NEW
+                        </motion.span>
+                      )}
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <h3 className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors duration-200 flex-1 leading-relaxed">
+                        {item.title}
+                      </h3>
+                      <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Desktop Layout */}
+                  <div className="hidden md:flex items-center gap-4">
                     {/* Date */}
-                    <span className="text-xs md:text-sm font-medium text-gray-500 min-w-[80px] md:min-w-[100px]">
+                    <span className="text-sm font-medium text-gray-500 min-w-[100px]">
                       {item.date}
                     </span>
                     
                     {/* New Badge */}
                     {item.isNew && (
                       <motion.span
-                        className="text-xs font-bold px-1.5 md:px-2 py-0.5 md:py-1 bg-red-500 text-white rounded text-[10px] md:text-xs"
+                        className="text-xs font-bold px-2 py-1 bg-red-500 text-white rounded"
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
                       >
@@ -152,12 +179,12 @@ const Latest = () => {
                     )}
                     
                     {/* Title */}
-                    <h3 className="text-sm md:text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors duration-200 flex-1 leading-tight">
+                    <h3 className="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors duration-200 flex-1 leading-tight">
                       {item.title}
                     </h3>
                     
                     {/* Arrow */}
-                    <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>

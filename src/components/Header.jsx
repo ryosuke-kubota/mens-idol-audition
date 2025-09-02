@@ -40,7 +40,7 @@ const Header = () => {
               transition={{ type: "spring", stiffness: 400 }}
             >
               <a href="/" className={`text-2xl font-black tracking-tighter transition-colors duration-300 ${
-                scrolled ? 'text-gray-900' : 'text-white'
+                scrolled ? 'text-gray-900' : 'text-gray-900'
               }`}>
                 MEN'S IDOL
                 <span className="text-sm font-normal ml-2 opacity-60">2025</span>
@@ -55,10 +55,10 @@ const Header = () => {
                   href={item.href}
                   className={`relative font-medium tracking-wider text-sm transition-all duration-300 ${
                     item.highlight
-                      ? `px-6 py-2 ${scrolled ? 'bg-blue-600 text-white' : 'bg-white text-black'} hover:scale-105`
+                      ? `px-6 py-2 ${scrolled ? 'bg-blue-600 text-white' : 'bg-blue-600 text-white'} hover:scale-105`
                       : scrolled 
                         ? 'text-gray-700 hover:text-blue-600' 
-                        : 'text-white/90 hover:text-white'
+                        : 'text-gray-700 hover:text-blue-600'
                   }`}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ const Header = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`lg:hidden relative w-8 h-8 flex flex-col justify-center items-center ${
-                scrolled ? 'text-gray-900' : 'text-white'
+                scrolled ? 'text-gray-900' : 'text-gray-900'
               }`}
             >
               <motion.span
