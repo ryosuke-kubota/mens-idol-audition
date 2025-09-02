@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 
 const Video = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
   const [selectedVideo, setSelectedVideo] = useState(0)
 
   // YouTube video IDs - replace with actual video IDs
