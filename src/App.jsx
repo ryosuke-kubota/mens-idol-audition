@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Entry from './components/Entry'
 import Video from './components/Video'
+import Latest from './components/Latest'
 import Program from './components/Program'
 import News from './components/News'
 import AnimatedBackground from './components/AnimatedBackground'
@@ -16,8 +17,7 @@ function App() {
       <About />
       <Entry />
       <Video />
-      <Program />
-      <News />
+      <Latest />
     </div>
   )
 }
