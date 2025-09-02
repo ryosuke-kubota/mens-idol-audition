@@ -88,43 +88,43 @@ const Latest = () => {
   }
 
   return (
-    <section id="latest" className="relative py-32 bg-transparent overflow-hidden" ref={ref}>
+    <section id="latest" className="relative py-16 md:py-32 bg-transparent overflow-hidden" ref={ref}>
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto px-6"
+        className="relative z-10 max-w-7xl mx-auto px-4 md:px-6"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
       >
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="text-blue-600 font-bold text-sm tracking-widest uppercase mb-4 block">
+          <span className="text-blue-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
             LATEST UPDATES
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
             最新
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               情報
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             PRODUCE 101 JAPANに関する最新ニュースとアップデート
           </p>
         </motion.div>
 
         {/* News List Container */}
         <motion.div
-          className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl"
+          className="bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-2xl"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {/* News Items */}
-          <div className="space-y-2">
+          <div className="space-y-1 md:space-y-2">
             {newsItems.map((item, index) => (
               <motion.article
                 key={index}
@@ -133,17 +133,17 @@ const Latest = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.05 * index }}
               >
-                <a href="#" className="block hover:bg-gray-50/50 rounded-lg transition-colors duration-200 px-4 py-3">
-                  <div className="flex items-center gap-4">
+                <a href="#" className="block hover:bg-gray-50/50 rounded-lg transition-colors duration-200 px-2 md:px-4 py-2 md:py-3">
+                  <div className="flex items-center gap-2 md:gap-4">
                     {/* Date */}
-                    <span className="text-sm font-medium text-gray-500 min-w-[100px]">
+                    <span className="text-xs md:text-sm font-medium text-gray-500 min-w-[80px] md:min-w-[100px]">
                       {item.date}
                     </span>
                     
                     {/* New Badge */}
                     {item.isNew && (
                       <motion.span
-                        className="text-xs font-bold px-2 py-1 bg-red-500 text-white rounded"
+                        className="text-xs font-bold px-1.5 md:px-2 py-0.5 md:py-1 bg-red-500 text-white rounded text-[10px] md:text-xs"
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
                       >
@@ -152,12 +152,12 @@ const Latest = () => {
                     )}
                     
                     {/* Title */}
-                    <h3 className="text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors duration-200 flex-1">
+                    <h3 className="text-sm md:text-base font-medium text-gray-900 group-hover:text-blue-600 transition-colors duration-200 flex-1 leading-tight">
                       {item.title}
                     </h3>
                     
                     {/* Arrow */}
-                    <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-3 h-3 md:w-4 md:h-4 text-gray-400 group-hover:text-blue-600 transition-colors duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
@@ -181,7 +181,7 @@ const Latest = () => {
 
         {/* Quick Links */}
         <motion.div
-          className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 1 }}
@@ -191,17 +191,17 @@ const Latest = () => {
             href="https://twitter.com/produce101jp"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-lg transition-all duration-200 group"
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 md:p-6 hover:shadow-lg transition-all duration-200 group"
           >
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-center gap-3 md:gap-4">
+              <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                 </svg>
               </div>
               <div>
-                <h4 className="font-bold text-gray-900">Twitter</h4>
-                <p className="text-sm text-gray-600">@produce101jp</p>
+                <h4 className="font-bold text-gray-900 text-sm md:text-base">Twitter</h4>
+                <p className="text-xs md:text-sm text-gray-600">@produce101jp</p>
               </div>
             </div>
           </a>

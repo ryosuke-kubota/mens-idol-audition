@@ -13,9 +13,9 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             {/* Main Title with Mask Effect */}
-            <div className="mb-8 overflow-hidden">
+            <div className="mb-6 md:mb-8 overflow-hidden">
               <motion.h1 
-                className="text-6xl md:text-8xl lg:text-9xl font-black text-gray-900 leading-none tracking-tighter"
+                className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-black text-gray-900 leading-none tracking-tighter"
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, delay: 0.2, ease: [0.43, 0.13, 0.23, 0.96] }}
@@ -27,7 +27,7 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="inline-block mr-4"
+                  className="inline-block mr-2 md:mr-4"
                 >
                   MEN'S
                 </motion.span>
@@ -44,7 +44,7 @@ const Hero = () => {
 
             {/* Subtitle */}
             <motion.h2
-              className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-700 mb-4 drop-shadow-lg"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-gray-700 mb-4 drop-shadow-lg px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -57,7 +57,7 @@ const Hero = () => {
 
             {/* Description */}
             <motion.p
-              className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto drop-shadow-lg"
+              className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto drop-shadow-lg px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}

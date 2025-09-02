@@ -30,23 +30,23 @@ const About = () => {
   }
 
   return (
-    <section id="about" className="relative py-32 bg-transparent overflow-hidden" ref={ref}>
+    <section id="about" className="relative py-16 md:py-32 bg-transparent overflow-hidden" ref={ref}>
       
       <motion.div 
-        className="relative z-10 max-w-6xl mx-auto px-6 bg-white/50 backdrop-blur-sm rounded-3xl py-16"
+        className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 bg-white/50 backdrop-blur-sm rounded-2xl md:rounded-3xl py-8 md:py-16"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
         {/* Section Title */}
         <motion.div 
-          className="text-center mb-20"
+          className="text-center mb-10 md:mb-20"
           variants={itemVariants}
         >
-          <span className="text-blue-600 font-bold text-sm tracking-widest uppercase mb-4 block">
+          <span className="text-blue-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
             ABOUT
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight">
             CREATE YOUR
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
               FUTURE
@@ -61,30 +61,30 @@ const About = () => {
             className="space-y-8 text-center"
             variants={itemVariants}
           >
-            <div className="space-y-8">
-              <p className="text-2xl text-gray-700 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+            <div className="space-y-6 md:space-y-8">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
                 PRODUCE 101 JAPANは、日本最大級のサバイバルオーディション番組で
                 2019年SEASON1を皮切りに
                 2021年にSEASON2、2023年にTHE GIRLSと、3シリーズが制作され
                 日本国内にオーディションブームを巻き起こしました。
               </p>
-              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
                 番組オーディションに参加した101人の練習生から、
                 100%視聴者の投票によってデビューメンバーが決まり、
                 日本のトップアーティスト JO1、INI、ME:Iが誕生しました。
               </p>
-              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
                 PRODUCE 101 JAPANの第4弾、「PRODUCE 101 JAPAN 新世界」では
                 史上初！国籍と出身地を問わず全世界から応募が可能で、
                 さらにグローバル配信、全世界のファン投票も初めて実施されるなど、
                 番組の規模を日本国内から世界へ広げていきます。
               </p>
-              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
                 全世界が一つとなってプロデュースする初の日本発グローバルボーイズグループの誕生！
                 新世界の扉を開く世界中にいる練習生の挑戦と
                 この旅路を共にする国境を越えたプロデューサー（視聴者）の皆様をお待ちしております。
               </p>
-              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
                 応募期間:2025年7月17日 〜 2025年9月4日
                 放送時期:2026年上半期（予定）
               </p>

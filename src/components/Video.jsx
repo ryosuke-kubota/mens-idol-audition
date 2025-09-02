@@ -27,43 +27,43 @@ const Video = () => {
   ]
 
   return (
-    <section id="video" className="relative py-32 bg-transparent overflow-hidden" ref={ref}>
+    <section id="video" className="relative py-16 md:py-32 bg-transparent overflow-hidden" ref={ref}>
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto px-6"
+        className="relative z-10 max-w-7xl mx-auto px-4 md:px-6"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
       >
         {/* Section Title */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="text-purple-600 font-bold text-sm tracking-widest uppercase mb-4 block">
+          <span className="text-purple-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
             VIDEOS
           </span>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
             WATCH THE
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               JOURNEY
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             過去のシーズンのハイライトと感動の瞬間をご覧ください
           </p>
         </motion.div>
 
         {/* Main Video Container */}
         <motion.div
-          className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl"
+          className="bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-2xl"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {/* YouTube Embed */}
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-gray-900">
+          <div className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-gray-900">
             <iframe
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${videos[selectedVideo].id}?rel=0&modestbranding=1`}
@@ -75,11 +75,11 @@ const Video = () => {
           </div>
 
           {/* Video Info */}
-          <div className="mt-6 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          <div className="mt-4 md:mt-6 text-center">
+            <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-1 md:mb-2">
               {videos[selectedVideo].title}
             </h3>
-            <p className="text-lg text-gray-600">
+            <p className="text-sm md:text-lg text-gray-600">
               {videos[selectedVideo].description}
             </p>
           </div>
