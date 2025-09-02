@@ -30,13 +30,10 @@ const About = () => {
   }
 
   return (
-    <section id="about" className="relative py-32 bg-white overflow-hidden" ref={ref}>
-      {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-30" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl opacity-30" />
+    <section id="about" className="relative py-32 bg-transparent overflow-hidden" ref={ref}>
       
       <motion.div 
-        className="relative z-10 max-w-7xl mx-auto px-6"
+        className="relative z-10 max-w-6xl mx-auto px-6 bg-white/50 backdrop-blur-sm rounded-3xl py-16"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -47,7 +44,7 @@ const About = () => {
           variants={itemVariants}
         >
           <span className="text-blue-600 font-bold text-sm tracking-widest uppercase mb-4 block">
-            ABOUT US
+            ABOUT
           </span>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
             CREATE YOUR
@@ -58,51 +55,44 @@ const About = () => {
         </motion.div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
+        <div className="grid lg:grid-cols-1 gap-16 items-center">
+          {/* Main Content */}
           <motion.div 
-            className="space-y-8"
+            className="space-y-8 text-center"
             variants={itemVariants}
           >
-            <div className="space-y-6">
-              <p className="text-xl text-gray-700 leading-relaxed">
-                Men's Idol Audition is Japan's most prestigious platform for discovering and developing the next generation of male entertainment stars.
+            <div className="space-y-8">
+              <p className="text-2xl text-gray-700 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+                PRODUCE 101 JAPANは、日本最大級のサバイバルオーディション番組で
+                2019年SEASON1を皮切りに
+                2021年にSEASON2、2023年にTHE GIRLSと、3シリーズが制作され
+                日本国内にオーディションブームを巻き起こしました。
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Out of 101 trainees dreaming of debut, the final debut group is determined solely by 100% viewer votes. Through this program, Japan's top-tier idol groups have been born.
+              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+                番組オーディションに参加した101人の練習生から、
+                100%視聴者の投票によってデビューメンバーが決まり、
+                日本のトップアーティスト JO1、INI、ME:Iが誕生しました。
               </p>
-            </div>
-
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <motion.div 
-                className="text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="text-4xl font-black text-blue-600 mb-2">500+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Auditions</div>
-              </motion.div>
-              <motion.div 
-                className="text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="text-4xl font-black text-purple-600 mb-2">50+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Debuts</div>
-              </motion.div>
-              <motion.div 
-                className="text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="text-4xl font-black text-pink-600 mb-2">1M+</div>
-                <div className="text-sm text-gray-600 uppercase tracking-wider">Fans</div>
-              </motion.div>
+              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+                PRODUCE 101 JAPANの第4弾、「PRODUCE 101 JAPAN 新世界」では
+                史上初！国籍と出身地を問わず全世界から応募が可能で、
+                さらにグローバル配信、全世界のファン投票も初めて実施されるなど、
+                番組の規模を日本国内から世界へ広げていきます。
+              </p>
+              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+                全世界が一つとなってプロデュースする初の日本発グローバルボーイズグループの誕生！
+                新世界の扉を開く世界中にいる練習生の挑戦と
+                この旅路を共にする国境を越えたプロデューサー（視聴者）の皆様をお待ちしております。
+              </p>
+              <p className="text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '2' }}>
+                応募期間:2025年7月17日 〜 2025年9月4日
+                放送時期:2026年上半期（予定）
+              </p>
             </div>
           </motion.div>
 
           {/* Right Content - Success Stories */}
-          <motion.div 
+          {/* <motion.div 
             className="space-y-6"
             variants={itemVariants}
           >
@@ -131,24 +121,8 @@ const About = () => {
                 />
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
-
-        {/* CTA Section */}
-        <motion.div 
-          className="text-center mt-20"
-          variants={itemVariants}
-        >
-          <button className="group relative px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg rounded-full overflow-hidden transition-all duration-300 hover:scale-105">
-            <span className="relative z-10">DISCOVER MORE</span>
-            <motion.div 
-              className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600"
-              initial={{ x: '100%' }}
-              whileHover={{ x: 0 }}
-              transition={{ duration: 0.3 }}
-            />
-          </button>
-        </motion.div>
       </motion.div>
     </section>
   )

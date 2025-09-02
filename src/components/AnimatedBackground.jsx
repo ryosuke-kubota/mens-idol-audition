@@ -70,7 +70,7 @@ const AnimatedBackground = () => {
   }, [])
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
+    <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -10 }}>
       {/* Background gradient */}
       <div 
         className="absolute inset-0"

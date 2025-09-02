@@ -34,7 +34,7 @@ const Program = () => {
   ]
 
   return (
-    <section id="program" className="relative py-32 bg-gradient-to-b from-gray-50 to-white overflow-hidden" ref={ref}>
+    <section id="program" className="relative py-32 bg-transparent overflow-hidden" ref={ref}>
       {/* Animated Background */}
       <div className="absolute inset-0">
         <motion.div
@@ -63,7 +63,7 @@ const Program = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 bg-white/90 backdrop-blur-sm rounded-3xl py-16">
         {/* Section Header */}
         <motion.div
           className="text-center mb-20"
