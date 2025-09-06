@@ -8,7 +8,7 @@ const Video = () => {
 
   // YouTube video - replace with actual video ID
   const video = {
-    id: 'dQw4w9WgXcQ', // Replace with actual video ID
+    id: 'fK9g3Y_GOWA', // Replace with actual video ID
     title: 'MEN\'S IDOL SCHOOL コンセプトムービー',
     description: 'プロに頼らず、どこまで成り上がれるか?'
   }

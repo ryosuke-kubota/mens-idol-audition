@@ -8,24 +8,24 @@ const Producer = () => {
 
   const producers = [
     {
-      name: '山田太郎',
-      role: '元ジャニーズJr.出身プロデューサー',
-      description: 'アイドル経験者として候補生に共感できる立場',
-      image: '/images/producer1.jpg',
+      name: '探偵ちゃん',
+      role: '',
+      description: 'SNS世代に刺さる存在感。、候補生に寄り添う視点を担当。',
+      image: '/images/producer01.jpg',
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      name: '佐藤健',
-      role: 'エンターテイメント業界のベテラン',
-      description: 'SNS世代に刺さる存在感、候補生に寄り添う視点を担当。',
-      image: '/images/producer2.jpg',
+      name: '堀未央奈(元乃木坂46)',
+      role: '',
+      description: 'アイドル経験者として候補生に共感できる立場。',
+      image: '/images/producer02.jpg',
       color: 'from-purple-500 to-pink-500'
     },
     {
-      name: '田中みなみ',
-      role: '音楽プロデューサー',
+      name: '福岡みなみ',
+      role: '',
       description: '知的で都会的なコメント力を発揮。',
-      image: '/images/producer3.jpg',
+      image: '/images/producer03.jpg',
       color: 'from-green-500 to-teal-500'
     }
   ]

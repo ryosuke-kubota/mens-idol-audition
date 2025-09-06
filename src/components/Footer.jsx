@@ -11,7 +11,7 @@ const Footer = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        © {currentYear} PRODUCE 101 JAPAN. All Rights Reserved.
+        © {currentYear} MEN'S IDOL SCHOOL in Tokyo. All Rights Reserved.
       </motion.div>
     </footer>
   )

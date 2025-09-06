@@ -97,11 +97,11 @@ const Schedule = () => {
                 <div className={`md:w-5/12 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
                   <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl">
                     <div className="flex items-center mb-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                      <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-sm flex items-center justify-center text-white font-bold text-xl px-4">
                         {period.year}
                       </div>
                       <div className="ml-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-900">{period.title}</h3>
+                        <h3 className="text-base md:text-2xl font-bold text-gray-900">{period.title}</h3>
                         {period.subtitle && (
                           <p className="text-orange-600 font-medium" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
                             {period.subtitle}

@@ -15,7 +15,7 @@ const Entry = () => {
         transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
       >
         {/* Section Title */}
-        <motion.div
+        {/* <motion.div
           className="mb-8 md:mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -30,10 +30,10 @@ const Entry = () => {
               コピー
             </span>
           </h2>
-        </motion.div>
+        </motion.div> */}
 
         {/* Catch Copy List */}
-        <motion.div
+        {/* <motion.div
           className="mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -65,7 +65,7 @@ const Entry = () => {
               ))}
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Entry Button Container */}
         <motion.div

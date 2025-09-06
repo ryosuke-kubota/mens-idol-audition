@@ -24,7 +24,7 @@ function App() {
       <Video />
       <Points />
       <Producer />
-      <Expectations />
+      {/* <Expectations /> */}
       <Entry />
       {/* <Latest /> */}
       <Footer />
