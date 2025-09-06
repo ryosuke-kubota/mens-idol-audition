@@ -9,8 +9,8 @@ const Video = () => {
   // YouTube video - replace with actual video ID
   const video = {
     id: 'dQw4w9WgXcQ', // Replace with actual video ID
-    title: 'PRODUCE 101 JAPAN 新世界',
-    description: '史上初のグローバルオーディション'
+    title: 'MEN\'S IDOL SCHOOL コンセプトムービー',
+    description: 'プロに頼らず、どこまで成り上がれるか?'
   }
 
   return (
@@ -29,16 +29,17 @@ const Video = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <span className="text-purple-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
-            VIDEOS
+            MISSION
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
-            WATCH THE
+            課題曲は
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-              JOURNEY
+              ジャニーズ・K-POP・LDH
             </span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            過去のシーズンのハイライトと感動の瞬間をご覧ください
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
+            毎週発表される課題曲は、ジャニーズ、K-pop、LDHなど幅広いジャンル。<br />
+            どうアレンジして“アイドルらしさ”を出すかが勝負！
           </p>
         </motion.div>
 

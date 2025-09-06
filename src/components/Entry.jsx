@@ -21,15 +21,50 @@ const Entry = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
+          <span className="text-red-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
+            CATCH COPY
+          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 mb-4 md:mb-6">
-            START YOUR
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-              JOURNEY
+            キャッチ
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-600">
+              コピー
             </span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            世界中から才能を募集中。あなたの夢を実現する第一歩を踏み出そう。
-          </p>
+        </motion.div>
+
+        {/* Catch Copy List */}
+        <motion.div
+          className="mb-12 md:mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-2xl max-w-4xl mx-auto">
+            <div className="space-y-6 md:space-y-8">
+              {[
+                'プロはいらない。スターを決めるのはあなた。',
+                '111人の青春。11人の未来。',
+                'ここは教室じゃない。これはサバイバル。',
+                '終わりがあるから美しい。',
+                '限られた時間の中で僕たちは'
+              ].map((copy, index) => (
+                <motion.div
+                  key={index}
+                  className="relative"
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.6, delay: 0.5 + (index * 0.1) }}
+                >
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full mr-4 flex-shrink-0"></div>
+                    <p className="text-lg md:text-2xl font-bold text-gray-900" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
+                      {copy}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         {/* Entry Button Container */}
@@ -83,13 +118,15 @@ const Entry = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mx-auto shadow-xl">
-            <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">応募期間</h3>
+            <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">募集要項</h3>
             <p className="text-base md:text-xl text-gray-700 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
-              2025年7月17日 〜 2025年9月4日
+              候補生：111人<br />
+              最終デビュー人数：11人
             </p>
             <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gray-200">
               <p className="text-sm md:text-lg text-gray-600">
-                放送予定：2026年上半期
+                募集期間：2025年春開始予定<br />
+                放送予定：2025年夏〜秋
               </p>
             </div>
           </div>
@@ -103,7 +140,8 @@ const Entry = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <p className="text-lg md:text-2xl font-bold text-gray-800 px-4" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
-            OWN YOUR NEW WORLD
+            終わりがあるから美しい。<br />
+            限られた時間の中で僕たちは
           </p>
         </motion.div>
 

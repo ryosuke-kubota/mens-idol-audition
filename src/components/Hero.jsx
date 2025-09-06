@@ -52,20 +52,22 @@ const Hero = () => {
                 textShadow: '0 0 15px rgba(255,255,255,0.7)'
               }}
             >
-              AUDITION 2025
+              SCHOOL in Tokyo
             </motion.h2>
 
             {/* Description */}
             <motion.p
-              className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto drop-shadow-lg px-4"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-800 mb-8 md:mb-12 max-w-3xl mx-auto drop-shadow-lg px-4 font-bold leading-relaxed"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
               style={{
-                textShadow: '0 0 10px rgba(255,255,255,0.6)'
+                textShadow: '0 0 10px rgba(255,255,255,0.6)',
+                fontFamily: 'Noto Sans JP, sans-serif'
               }}
             >
-              Shape the future of entertainment
+              終わりがあるから美しい。<br />
+              決められた時間の中で僕たちは...
             </motion.p>
 
             {/* CTA Buttons */}

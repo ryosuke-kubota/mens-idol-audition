@@ -14,10 +14,10 @@ const Header = () => {
   }, [])
 
   const menuItems = [
-    { label: 'ABOUT', href: '#about' },
-    { label: 'PROGRAM', href: '#program' },
-    { label: 'PEOPLE', href: '#people' },
-    { label: 'NEWS', href: '#news' },
+    { label: 'CONCEPT', href: '#about' },
+    { label: 'VISION', href: '#vision' },
+    { label: 'MISSION', href: '#video' },
+    { label: 'POINTS', href: '#points' },
     { label: 'ENTRY', href: '#entry', highlight: true }
   ]
 
@@ -42,7 +42,7 @@ const Header = () => {
               <a href="/" className={`text-2xl font-black tracking-tighter transition-colors duration-300 ${
                 scrolled ? 'text-gray-900' : 'text-gray-900'
               }`}>
-                MEN'S IDOL
+                MEN'S IDOL SCHOOL
                 <span className="text-sm font-normal ml-2 opacity-60">2025</span>
               </a>
             </motion.div>

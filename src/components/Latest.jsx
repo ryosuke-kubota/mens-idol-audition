@@ -8,66 +8,66 @@ const Latest = () => {
 
   const newsItems = [
     {
-      date: '2025.01.20',
+      date: '2025.03.15',
       category: 'ANNOUNCEMENT',
-      title: 'PRODUCE 101 JAPAN 新世界 グローバルオーディション開催決定',
-      description: '史上初、国籍・出身地不問の全世界オーディションがスタート。世界中から才能を募集します。',
+      title: 'MEN\'S IDOL SCHOOL 第1期生募集開始',
+      description: 'プロに頼らず、どこまで成り上がれるか？革新的な男性アイドル育成番組がスタート！',
       isNew: true,
       isPinned: true
     },
     {
-      date: '2025.01.18',
-      category: 'NEWS',
-      title: 'ME:I、デビュー後初の全国ツアー開催',
-      description: 'PRODUCE 101 JAPAN THE GIRLSから誕生したME:Iが、全国10都市でツアーを開催することが発表されました。',
+      date: '2025.03.10',
+      category: 'CONCEPT',
+      title: '課題曲ジャンル発表：ジャニーズ・K-pop・LDH',
+      description: '毎週発表される課題曲は幅広いジャンル。当たりハズレで運命が決まる！',
       isNew: true,
       isPinned: false
     },
     {
-      date: '2025.01.15',
-      category: 'MEDIA',
-      title: '特別番組「PRODUCE 101 JAPAN ヒストリー」放送決定',
-      description: 'これまでの3シーズンを振り返る特別番組が2月に放送されます。',
+      date: '2025.03.08',
+      category: 'SYSTEM',
+      title: '視聴者参加型システム詳細公開',
+      description: 'プロの審査員は一切なし。画面の向こうの"あなた"が未来のスターを決定します。',
       isNew: true,
       isPinned: false
     },
     {
-      date: '2025.01.12',
-      category: 'UPDATE',
-      title: 'オーディション応募サイトリニューアル',
-      description: '応募プロセスがより簡単に。モバイル対応も強化されました。',
+      date: '2025.03.05',
+      category: 'MISSION',
+      title: 'DIY衣装・メイクシステム導入',
+      description: '1チーム3万円支給。ユニクロ・ルミネで購入し自分たちでアレンジ。メイクは候補生同士で施し合います。',
       isNew: false,
       isPinned: false
     },
     {
-      date: '2025.01.10',
-      category: 'ACHIEVEMENT',
-      title: 'JO1、オリコン週間チャート1位獲得',
-      description: '最新シングルがオリコン週間チャートで1位を獲得。デビューから連続記録を更新。',
+      date: '2025.03.01',
+      category: 'VISION',
+      title: '2年限定ユニット・111人から11人へ',
+      description: '終わりがあるから美しい。限られた時間の中で僕たちは何を残せるのか？',
       isNew: false,
       isPinned: false
     },
     {
-      date: '2025.01.08',
-      category: 'EVENT',
-      title: 'INI ファンミーティング追加公演決定',
-      description: '好評につき、東京・大阪で追加公演が決定しました。',
+      date: '2025.02.28',
+      category: 'POINT',
+      title: 'セルフプロデュース力がそのまま評価に直結',
+      description: '衣装・メイクDIY：アイドルの"セルフプロデュース力"がそのまま評価に。',
       isNew: false,
       isPinned: false
     },
     {
-      date: '2025.01.05',
-      category: 'COLLABORATION',
-      title: 'PRODUCE 101 JAPAN × 有名ブランドコラボ',
-      description: '限定グッズやコレクションが発売予定。詳細は後日発表。',
+      date: '2025.02.25',
+      category: 'EXPECTATION',
+      title: 'SNSバズ必至・新しいスター誕生への期待',
+      description: '衣装・メイク・曲アレンジが毎週話題に。次世代型アイドルの発掘。',
       isNew: false,
       isPinned: false
     },
     {
-      date: '2025.01.02',
-      category: 'MESSAGE',
-      title: '新年のご挨拶とプロデューサーからのメッセージ',
-      description: '2025年の展望と、ファンの皆様への感謝のメッセージ。',
+      date: '2025.02.20',
+      category: 'CATCHCOPY',
+      title: 'キャッチコピー発表「終わりがあるから美しい」',
+      description: '「限られた時間の中で僕たちは...」完全オリジナルのメッセージ性。',
       isNew: false,
       isPinned: false
     }
@@ -76,13 +76,13 @@ const Latest = () => {
   const getCategoryColor = (category) => {
     switch(category) {
       case 'ANNOUNCEMENT': return 'bg-red-100 text-red-700 border-red-200'
-      case 'NEWS': return 'bg-blue-100 text-blue-700 border-blue-200'
-      case 'MEDIA': return 'bg-purple-100 text-purple-700 border-purple-200'
-      case 'UPDATE': return 'bg-green-100 text-green-700 border-green-200'
-      case 'ACHIEVEMENT': return 'bg-yellow-100 text-yellow-700 border-yellow-200'
-      case 'EVENT': return 'bg-pink-100 text-pink-700 border-pink-200'
-      case 'COLLABORATION': return 'bg-indigo-100 text-indigo-700 border-indigo-200'
-      case 'MESSAGE': return 'bg-gray-100 text-gray-700 border-gray-200'
+      case 'CONCEPT': return 'bg-blue-100 text-blue-700 border-blue-200'
+      case 'SYSTEM': return 'bg-purple-100 text-purple-700 border-purple-200'
+      case 'MISSION': return 'bg-green-100 text-green-700 border-green-200'
+      case 'VISION': return 'bg-yellow-100 text-yellow-700 border-yellow-200'
+      case 'POINT': return 'bg-pink-100 text-pink-700 border-pink-200'
+      case 'EXPECTATION': return 'bg-indigo-100 text-indigo-700 border-indigo-200'
+      case 'CATCHCOPY': return 'bg-gray-100 text-gray-700 border-gray-200'
       default: return 'bg-gray-100 text-gray-700 border-gray-200'
     }
   }
@@ -111,8 +111,8 @@ const Latest = () => {
               情報
             </span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            PRODUCE 101 JAPANに関する最新ニュースとアップデート
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
+            MEN'S IDOL SCHOOLに関する最新ニュースとアップデート
           </p>
         </motion.div>
 

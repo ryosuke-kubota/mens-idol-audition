@@ -44,12 +44,12 @@ const About = () => {
           variants={itemVariants}
         >
           <span className="text-blue-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
-            ABOUT
+            CONCEPT
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight">
-            CREATE YOUR
+            プロに頼らず
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-              FUTURE
+              どこまで成り上がれるか
             </span>
           </h2>
         </motion.div>
@@ -63,30 +63,28 @@ const About = () => {
           >
             <div className="space-y-6 md:space-y-8">
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
-                PRODUCE 101 JAPANは、日本最大級のサバイバルオーディション番組で
-                2019年SEASON1を皮切りに
-                2021年にSEASON2、2023年にTHE GIRLSと、3シリーズが制作され
-                日本国内にオーディションブームを巻き起こしました。
+                MEN'S IDOL SCHOOLは、革新的な男性アイドル育成番組です。<br />
+                テーマは「プロに頼らず、どこまで成り上がれるか？」<br />
+                2年限定ユニット。終わりがあるから美しい。
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
-                番組オーディションに参加した101人の練習生から、
-                100%視聴者の投票によってデビューメンバーが決まり、
-                日本のトップアーティスト JO1、INI、ME:Iが誕生しました。
+                従来のオーディション番組とは異なり、プロのトレーナーや審査員による評価は一切ありません。<br />
+                歌もダンスも衣装もメイクも、すべて候補生自身の力と工夫で挑戦！<br />
+                審査員は視聴者！画面の向こうの"あなた"が未来のアイドルを決めます。
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
-                PRODUCE 101 JAPANの第4弾、「PRODUCE 101 JAPAN 新世界」では
-                史上初！国籍と出身地を問わず全世界から応募が可能で、
-                さらにグローバル配信、全世界のファン投票も初めて実施されるなど、
-                番組の規模を日本国内から世界へ広げていきます。
+                毎週発表される課題曲は、ジャニーズ、K-pop、LDHなど幅広いジャンル。<br />
+                当たりチームは王道アイドル曲、ハズレチームは予想外の楽曲に挑戦し、<br />
+                どうアレンジして"アイドルらしさ"を出すかが勝負！
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
-                全世界が一つとなってプロデュースする初の日本発グローバルボーイズグループの誕生！
-                新世界の扉を開く世界中にいる練習生の挑戦と
-                この旅路を共にする国境を越えたプロデューサー（視聴者）の皆様をお待ちしております。
+                衣装は1チーム3万円支給。ユニクロ・ルミネなどで購入し、自分たちでアレンジ。<br />
+                メイクは候補生同士で施し合う。アイドル力と美意識が試されます。<br />
+                プロの評価ではなく、ファンの支持こそがアイドルに必要な力であることを体現。
               </p>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-bold" style={{ fontFamily: 'Noto Sans JP, sans-serif', lineHeight: '1.8' }}>
-                応募期間:2025年7月17日 〜 2025年9月4日
-                放送時期:2026年上半期（予定）
+                募集期間：2025年春開始予定<br />
+                放送予定：2025年夏〜秋
               </p>
             </div>
           </motion.div>
