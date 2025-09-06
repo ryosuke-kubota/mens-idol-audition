@@ -50,9 +50,6 @@ const Producer = () => {
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight">
             PRODUCER
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
-              紹介
-            </span>
           </h2>
         </motion.div>
 

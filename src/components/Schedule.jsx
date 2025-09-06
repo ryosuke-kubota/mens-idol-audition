@@ -73,7 +73,7 @@ const Schedule = () => {
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight">
             今後の
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">
               予定
             </span>
           </h2>
