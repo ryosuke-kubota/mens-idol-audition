@@ -80,7 +80,7 @@ const Entry = () => {
             href="#apply" 
             className="block relative group cursor-pointer"
           >
-            <img 
+            {/* <img 
               src="/images/entry.png" 
               alt="応募する"
               className="w-full max-w-md mx-auto rounded-2xl shadow-2xl transition-all duration-300 group-hover:shadow-3xl"
@@ -89,7 +89,7 @@ const Entry = () => {
                 e.target.style.display = 'none'
                 e.target.nextSibling.style.display = 'block'
               }}
-            />
+            /> */}
             
             {/* Fallback Styled Button */}
             <div 

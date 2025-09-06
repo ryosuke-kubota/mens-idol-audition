@@ -11,21 +11,21 @@ const Producer = () => {
       name: '探偵ちゃん',
       role: '',
       description: 'SNS世代に刺さる存在感。、候補生に寄り添う視点を担当。',
-      image: '/images/producer01.jpg',
+      image: 'images/producer01.jpg',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       name: '堀未央奈(元乃木坂46)',
       role: '',
       description: 'アイドル経験者として候補生に共感できる立場。',
-      image: '/images/producer02.jpg',
+      image: 'images/producer02.jpg',
       color: 'from-purple-500 to-pink-500'
     },
     {
       name: '福岡みなみ',
       role: '',
       description: '知的で都会的なコメント力を発揮。',
-      image: '/images/producer03.jpg',
+      image: 'images/producer03.jpg',
       color: 'from-green-500 to-teal-500'
     }
   ]
