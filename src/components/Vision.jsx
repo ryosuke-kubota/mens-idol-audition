@@ -57,8 +57,8 @@ const Vision = () => {
             {/* Flow Steps */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
               {/* Step 1 */}
-              <div className="text-center flex-1">
-                <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-gray-500 text-white rounded-full mb-3">
+              <div className="text-center flex-1 w-full md:w-auto">
+                <div className="inline-flex items-center justify-center w-full h-20 md:w-24 md:h-24 bg-gray-500 text-white rounded-full mb-3">
                   <span className="text-2xl md:text-3xl font-bold">111名</span>
                 </div>
                 <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">候補生</h3>
@@ -78,8 +78,8 @@ const Vision = () => {
               </div>
 
               {/* Step 2 */}
-              <div className="text-center flex-1">
-                <div className="inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-yellow-500 text-white rounded-full mb-3">
+              <div className="text-center flex-1 w-full md:w-auto">
+                <div className="inline-flex items-center justify-center w-full h-20 md:w-24 md:h-24 bg-yellow-500 text-white rounded-full mb-3">
                   <span className="text-2xl md:text-3xl font-bold">11名</span>
                 </div>
                 <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">最終デビュー</h3>
