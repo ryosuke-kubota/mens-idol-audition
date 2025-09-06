@@ -19,9 +19,6 @@ const Hero = () => {
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, delay: 0.2, ease: [0.43, 0.13, 0.23, 0.96] }}
-                style={{
-                  textShadow: '0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.6)'
-                }}
               >
                 <motion.span
                   initial={{ opacity: 0, y: 50 }}

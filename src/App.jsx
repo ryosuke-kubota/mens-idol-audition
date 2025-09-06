@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Schedule from './components/Schedule'
 import Vision from './components/Vision'
+import Mission from './components/Mission'
 import Video from './components/Video'
 import Points from './components/Points'
 import Producer from './components/Producer'
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Vision />
       <Schedule />
+      <Mission />
       <Video />
       <Points />
       <Producer />

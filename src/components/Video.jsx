@@ -28,18 +28,12 @@ const Video = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="text-purple-600 font-bold text-xs md:text-sm tracking-widest uppercase mb-2 md:mb-4 block">
-            MISSION
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-4 md:mb-6">
-            課題曲は
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-              ジャニーズ・K-POP・LDH
-            </span>
+            CONCEPT VIDEO
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4" style={{ fontFamily: 'Noto Sans JP, sans-serif' }}>
-            毎週発表される課題曲は、ジャニーズ、K-pop、LDHなど幅広いジャンル。<br />
-            どうアレンジして“アイドルらしさ”を出すかが勝負！
+            プロに頼らず、どこまで成り上がれるか？<br />
+            111人の候補生から11人のスターが誕生する
           </p>
         </motion.div>
 
