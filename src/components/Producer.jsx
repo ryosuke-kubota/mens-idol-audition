@@ -14,13 +14,13 @@ const Producer = () => {
       image: 'images/producer01.jpg',
       color: 'from-blue-500 to-cyan-500'
     },
-    {
-      name: '堀未央奈(元乃木坂46)',
-      role: '',
-      description: 'アイドル経験者として候補生に共感できる立場。',
-      image: 'images/producer02.jpg',
-      color: 'from-purple-500 to-pink-500'
-    },
+    // {
+    //   name: '堀未央奈(元乃木坂46)',
+    //   role: '',
+    //   description: 'アイドル経験者として候補生に共感できる立場。',
+    //   image: 'images/producer02.jpg',
+    //   color: 'from-purple-500 to-pink-500'
+    // },
     {
       name: '福岡みなみ',
       role: '',
