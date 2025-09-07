@@ -21,13 +21,13 @@ const Producer = () => {
     //   image: 'images/producer02.jpg',
     //   color: 'from-purple-500 to-pink-500'
     // },
-    {
-      name: '福岡みなみ',
-      role: '',
-      description: '知的で都会的なコメント力を発揮。',
-      image: 'images/producer03.jpg',
-      color: 'from-green-500 to-teal-500'
-    }
+    // {
+    //   name: '福岡みなみ',
+    //   role: '',
+    //   description: '知的で都会的なコメント力を発揮。',
+    //   image: 'images/producer03.jpg',
+    //   color: 'from-green-500 to-teal-500'
+    // }
   ]
 
   return (
