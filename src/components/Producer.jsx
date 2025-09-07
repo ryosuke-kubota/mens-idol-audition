@@ -66,7 +66,7 @@ const Producer = () => {
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-3xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300">
                 {/* Image Container */}
                 <div className="relative h-64 md:h-80 overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${producer.color} opacity-20`}></div>
+                  {/* <div className={`absolute inset-0 bg-gradient-to-br ${producer.color} opacity-20`}></div> */}
                   <img 
                     src={producer.image}
                     alt={producer.name}
