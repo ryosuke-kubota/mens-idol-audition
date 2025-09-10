@@ -7,13 +7,13 @@ const Producer = () => {
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const producers = [
-    {
-      name: '探偵ちゃん',
-      role: '',
-      description: 'SNS世代に刺さる存在感。、候補生に寄り添う視点を担当。',
-      image: 'images/producer01.jpg',
-      color: 'from-blue-500 to-cyan-500'
-    },
+    // {
+    //   name: '探偵ちゃん',
+    //   role: '',
+    //   description: 'SNS世代に刺さる存在感。、候補生に寄り添う視点を担当。',
+    //   image: 'images/producer01.jpg',
+    //   color: 'from-blue-500 to-cyan-500'
+    // },
     // {
     //   name: '堀未央奈(元乃木坂46)',
     //   role: '',
